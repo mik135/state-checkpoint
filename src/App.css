@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+body {
+  background-color: var(--darkCyan);
+  background-image: url("../public/images/bg-pattern-bottom.svg"), url("../public/images/bg-pattern-top.svg");
+  background-position: 160% -100%, -100% 160%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+  width: 320px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+}
+
+.card h2, p:nth-of-type(1) {
+  color: var(--veryDarkBlue);
+  margin: 0;
+}
+
+.bio {
+  color: var(--veryDarkBlue);
+  font-weight: 600;
+  margin: 0;
+  padding: 10px;
+}
+
+.card p:nth-of-type(1) {
+  color: var(--darkGrayishBlue);
+}
+
+.card div{
+  padding: 40px 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--darkGrayishBlue);
+}
+
+.userImg {
+  position: absolute;
+  border-radius: 50%;
+  top: 70px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.timed {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
